@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+}
+
+/* body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+
+} */
+
+#title {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px auto 0 auto;
+	font-size: 60px;
+	color: red;
+}
+
+section {
+	display: flex;
+	margin-top: 100px;
+	/* flex-direction: column; */
+}
+
+.card_container {
+	width: 50%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 20px;
+	border-radius: 20px;
+	border: 3px solid red;
+	margin-right: 10px;
+}
+
+.card_container .card_data_entry {
+	width: 50%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	line-height: 3;
+	align-items: center;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding: 20px 10px;
+	border: 3px solid red;
+}
+
+.card_wrapper {
+	width: 50%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 20px;
+	border-radius: 20px;
+	margin-left: 10px;
+	border: 3px solid green;
+}
+
+.card_wrapper .card_results {
+	width: 40%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	/* line-height: 2; */
+	align-items: center;
+	margin: 0 auto;
+	border-radius: 10px;
+	padding: 20px 10px;
+	border: 3px solid green;
+}
+
+.card_wrapper .card_results .image_result {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+#image_input {
+	display: none;
+}
+
+#Upload_file {
+	width: 50%;
+	background-color: red;
+	color: white;
+	text-align: center;
+}
+
+#title_input {
+	border-radius: 10px;
+	padding: 10px 20px;
+	border: 1px solid #626060;
+	margin: 20px 0;
+}
+
+#description_input {
+	border-radius: 10px;
+	text-indent: 10px;
+	/* padding: 10px 20px; */
+}
+
+#datetime_input {
+	border-radius: 10px;
+	padding: 10px 20px;
+	border: 1px solid #626060;
+	margin: 0 0 20px 0;
+}
+
+#submit_btn {
+	padding: 7px 20px;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 10px;
+	border: 1px solid #626060;
+	background: white;
+	color: red;
+}
+
+/* Examples */
+/* 
+body {
+	background-color: #f5f8ff;
+}
+
+.container {
+	background-color: #f5f8ff;
+	width: 60%;
+	min-width: 450px;
+	position: relative;
+	margin: 50px auto;
+	padding: 50px 20px;
+	border-radius: 7px;
+	box-shadow: 0 20px 35px rgba(0, 0, 0, 0.05);
+}
+
+		//this is to target the input it self
+
+input[type="file"] {
+	display: none;
+}
+
+.container label {
+	display: block;
+	position: relative;
+	background-color: #025bee;
+	color: #ffffff;
+	font-size: 18px;
+	text-align: center;
+	margin: auto;
+	width: 300px;
+	padding: 18px 0;
+	border-radius: 5px;
+	cursor: pointer;
+
+}
+
+.container p {
+	text-align: center;
+	margin: 20px 0 30px 0;
+}
+
+.container #images {
+	width: 90%;
+	border: 1px solid black;
+	position: relative;
+	margin: auto;
+} */

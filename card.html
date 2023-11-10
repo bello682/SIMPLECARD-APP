@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="card.css" />
+	</head>
+
+	<body>
+		<h1 id="title">Image Preview Card</h1>
+		<section>
+			<div class="card_container">
+				<div class="card_data_entry">
+					<label id="Upload_file">
+						Upload Image
+						<input type="file" id="image_input" multiple />
+						<!-- 	accept="image/png, image/jpg"
+							multiple -->
+						<ion-icon name="download-outline"></ion-icon>
+					</label>
+
+					<label>
+						Title
+						<input
+							type="text"
+							name="titleText"
+							id="title_input"
+							placeholder="Hair name"
+						/>
+					</label>
+
+					<label>
+						Description
+						<textarea
+							name=""
+							id="description_input"
+							cols="30"
+							rows="5"
+							placeholder="describe your hair"
+						></textarea>
+					</label>
+
+					<label>
+						Date/Time
+						<input type="datetime-local" name="datetime" id="datetime_input" />
+					</label>
+					<button type="submit" id="submit_btn">Submit</button>
+				</div>
+			</div>
+
+			<div class="card_wrapper">
+				<!-- <div class="card_results" id="card_results">
+					<img
+						src="images/2.jpeg"
+						alt="image esult"
+						id="image_result"
+						class="image_result"
+					/>
+
+					<h3 class="title">Low Cut Fade</h3>
+					<p class="description">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error,
+						animi!
+					</p>
+					<p class="date_time"></p>
+				</div> -->
+			</div>
+		</section>
+
+		<!-- <h1>image Preview</h1>
+		<input type="file" name="inpFile" id="inpFile" />
+		<div class="image-preview" id="imagePreview">
+			<img src="" alt="Image Preview" class="image-preview__image" />
+			<span class="image-preview__default-text">iMAGE Preview</span>
+		</div>
+
+		<script>
+			const inpFile = document.getElementById("inpFile");
+			const previewContainer = document.getElementById("imagePreview");
+			const previewImage = document.querySelector(".image-preview__image");
+			const previewDefaultRext = document.getElementById(
+				"image-preview__image"
+			);
+
+			inpFile.addEventListener("change", function () {
+				const file = this.files[0];
+
+				if (file) {
+					const reader = new FileReader();
+					inpFile.innerHTML.result = previewImage;
+
+					// previewImage.style.display = "block";
+					reader.addEventListener("load", function () {
+						console.log(this);
+						previewImage.setAttribute("src", this.result);
+					});
+					reader.readAsDataURL(file);
+				}
+			});
+		</script> -->
+
+		<!-- Examples
+		<div class="container">
+			<input
+				type="file"
+				id="file-input"
+				accept="image/png image/jpeg"
+				multiple
+			/>
+			<label for="file-input">&nbsp; Choose A Photo </label>
+
+			<p id="num-of-files">No File Chosen</p>
+			<div id="images"></div>
+		</div> -->
+
+		<script src="card.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>
